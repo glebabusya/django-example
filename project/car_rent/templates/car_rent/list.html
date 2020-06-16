@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{%load car_filter%}
+<body>
+<div>
+    <table>
+        {%for car in cars%}
+        <tr>
+            <td title="{{car.name}}">
+                {{car.name|cut:9}}
+            </td>
+            <td>
+                {{car.reg_num}}
+            </td>
+            <td>
+                {{car.user}}
+            </td>
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+{%cars_in_garage 2 '-id'%}
+{%abc%}
+</body>
+</html>

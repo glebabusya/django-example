@@ -1,0 +1,13 @@
+db.sqlite3
+3.py
+123qwe.py
+a.py
+iuyouh.py
+q.py
+test.py
+venv/
+app/
+media/
+*.pyc
+*.pyo
+.idea/
