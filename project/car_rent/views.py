@@ -23,3 +23,8 @@ class CarsListView(View):
     def get(self, request):
         cars = models.Car.objects.all()
         return render(request, 'car_rent/list.html', {'cars':cars})
+
+
+class MyView(View):
+    def get(self, request):
+        pass
