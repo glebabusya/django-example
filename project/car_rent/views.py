@@ -22,7 +22,7 @@ class CarView(View):
 class CarsListView(View):
     def get(self, request):
         cars = models.Car.objects.all()
-        return render(request, 'car_rent/list.html', {'cars': cars})
+        return render(request, 'car_rent/list.html', {'cars':cars})
 
 
 class MyView(View):
@@ -30,4 +30,4 @@ class MyView(View):
         pass
 
     def post(self, request):
-        return 'asdqwe'
+        pass
