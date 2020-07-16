@@ -3,6 +3,7 @@ from django.views.generic import View
 from . import forms, models
 
 
+
 # Create your views here.
 class CarView(View):
     template_name = 'car_rent/car.html'

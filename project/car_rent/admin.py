@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.admin import TabularInline, StackedInline
-
+from django.utils.translation import gettext_lazy as _
 from . import models
 
 
@@ -28,4 +28,4 @@ class GarageAdmin(admin.ModelAdmin):
     def addres_reset(self, request, queryset):
         queryset.update(addres='')
 
-    addres_reset.short_description = 'reset garage addres'
+    addres_reset.short_description = _('reset garage addres')
