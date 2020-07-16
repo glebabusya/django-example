@@ -6,6 +6,7 @@ from django.utils.translation import gettext_lazy as _
 
 class Garage(models.Model):
     addres = models.CharField(max_length=400, verbose_name=_('Address'))
+    price = models.DecimalField(decimal_places=2, max_digits=12, verbose_name=_('Price'), default=10000)
 
     class Meta:
         verbose_name = _('Garage')

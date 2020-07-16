@@ -122,3 +122,7 @@ MEDIA_ROOT = ''
 MEDIA_URL = '/media/'
 
 LOCALE_PATHS = ['locale']
+
+FORMAT_MODULE_PATH = ['formats']
+
+USE_THOUSAND_SEPARATOR = True
