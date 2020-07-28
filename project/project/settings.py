@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
-    'car_rent'
+    'car_rent',
+    'shop'
 ]
 
 MIDDLEWARE = [

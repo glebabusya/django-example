@@ -3,7 +3,6 @@ from django.views.generic import View
 from . import forms, models
 
 
-
 # Create your views here.
 class CarView(View):
     template_name = 'car_rent/car.html'
@@ -26,9 +25,7 @@ class CarsListView(View):
         return render(request, 'car_rent/list.html', {'cars': cars})
 
 
-class MyView(View):
+class GaragesView(View):
     def get(self, request):
-        pass
-
-    def post(self, request):
-        pass
+        garages = models.Garage.objects.all()
+        return render(request, 'car_rent/garage.html', {'garages': garages})

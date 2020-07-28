@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{%load i18n%}
+{%load l10n%}
+<body>
+{%localize on%}
+<div>
+    {%for garage in garages%}
+    Адрес - {{garage.addres}}, цена - {{garage.price}}<br>
+    {%endfor%}
+</div>
+{%endlocalize%}
+</body>
+</html>
